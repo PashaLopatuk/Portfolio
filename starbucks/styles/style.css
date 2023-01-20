@@ -1,0 +1,184 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow: hidden;
+    height: 100%;
+    min-width: 320px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+
+}
+
+.wrapper {
+    overflow: hidden;
+    /* min-height: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 400px;
+    width: 70vw;
+    max-width: 1100px;
+    height: 92%;
+    background-color: #fff;
+    flex: 1 1 auto;
+    border-radius: 50px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    /* margin-right: 2%;
+    margin-left: 2%; */
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+[class*="__container"] {
+    max-width: 1100px;
+}
+
+.container {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    /* background-color: rgb(83, 199, 116); */
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    align-items: center;
+}
+.bg {
+    position: absolute;
+    width: 100vw;
+    /* height: 100%; */
+}
+.header {
+    /* max-width: 100%; */
+}
+.header__container {
+    height: 80px;
+    border-radius: 60px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;   
+    transition: 1s all;
+}
+.header__container .header__case {
+    transition: 0s all;
+    flex: 1 1 auto;
+    width: 90vw;
+    max-width: 1040px;
+    width: 80vw;
+    transition: 1.5s all;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* gap:inherit; */
+    justify-content:space-between;
+}
+.header__container .header__case .logo {
+    max-height: 60px;
+}
+.header__container .header__case .logo .image {
+    max-height: 60px;
+}
+.header__case .menu {
+    margin-right: 10px;
+}
+.header__case .menu .list {
+    display: flex;
+    list-style: none;
+    gap: 2vw;
+    font-weight: 500;
+}
+.header__case .menu .item a {
+    color: black;
+    text-decoration: none;
+}
+.header__case .menu .item a:hover {
+    text-decoration: underline;
+}
+.header__container:hover {
+    transition: .5s all;
+    /* background-color: #eee; */
+    box-shadow: 0px 10px 20px 0px rgba(0,0,0, 0.4);
+}
+
+.main{}
+.main__container {
+    display: flex;
+    justify-content: center;
+}
+.main__case {
+    width: 80vw;
+    height: 60vh;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+}
+.main__case .article {
+    color: #434343;
+    width: 100%;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+}
+.main__case .article .title .Starbucks {
+    font-weight: 600;
+    font-size: larger;
+    color: #047044;
+}
+.main__case .article .text {
+    max-width: 50%;
+    font-size: 12px;
+}
+.main__case .image {
+    width: 30%;
+    height: 100%;
+}
+.main__case .article .title {
+    font-size: 35px;
+    width: 100%;
+}
+.main__case .article .btn .learn__more {
+    background-color: #047044;
+    color: #fff;
+    width: 135px;
+    height: 53px;
+    border-radius: 50px;
+
+    transition: 1s all;
+}
+.media {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50vh;
+    gap: 10px;
+    align-items: center;
+}
+
+.main__case .article .btn .learn__more:hover {
+    background-color: #044f30;
+    transition: .5s all;
+    box-shadow: 0px 10px 20px 1px rgba(4, 79, 48, .4);
+}
+
+.footer__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-height: 100px;
+    margin-bottom: 20px;
+}

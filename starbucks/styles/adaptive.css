@@ -1,0 +1,32 @@
+
+@media (max-width: 1080px) {
+    .wrapper {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .header__case .menu {
+        margin-right: 0;
+    }
+    .header__case {
+        margin-inline: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .header__container .header__case .menu .list {
+        font-size: 3vw;
+    }
+    .main__case .image{
+        display: none;
+    }
+    .main__case .article .text {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 410px) {
+    .main__case .article .title {
+        font-size: 8vw;
+    }
+}
