@@ -3,10 +3,12 @@
     .wrapper {
         margin-left: 0;
         margin-right: 0;
+        margin-bottom: 0;
+        margin-top: 0;
     }
     
     .header__case .menu {
-        margin-right: 0;
+        margin-right: 10px;
     }
     .header__case {
         margin-inline: 10px;
@@ -23,10 +25,30 @@
     .main__case .article .text {
         max-width: 100%;
     }
+    .header__case .menu .list {
+        display: none;
+    }
+    .header__case .menu .button {
+        display: block;
+    }
+    .header__case .menu .button {}
+    .header__case .menu {
+        margin-right: 0px;
+    }
+    .header__container {
+        display: flex;
+        justify-content: end;
+    }
+    .header {
+        transition: .5s all;
+    }
 }
 
 @media (max-width: 410px) {
     .main__case .article .title {
         font-size: 8vw;
+    }
+    .header__case {
+        justify-content: center;
     }
 }
