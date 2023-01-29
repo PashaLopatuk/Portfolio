@@ -5,6 +5,8 @@
         margin-right: 0;
         margin-bottom: 0;
         margin-top: 0;
+        height: 90%;
+        width: 100%;
     }
     
     .header__case .menu {
@@ -13,7 +15,15 @@
     .header__case {
         margin-inline: 10px;
     }
+    .container {
+        display: flex;
+        /* flex-direction:inherit; */
+        justify-content: end;
+    }
 }
+
+
+
 
 @media (max-width: 500px) {
     .header__container .header__case .menu .list {
@@ -41,6 +51,9 @@
     }
     .header {
         transition: .5s all;
+    }
+    .wrapper {
+        height: 95%;
     }
 }
 
